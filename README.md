@@ -43,6 +43,7 @@ Login with PIN (1234 by default).
 Choose Deposit, Withdraw, or Check Balance.
 
 🚀 Technologies Used
+
 Python
 
 JSON for data storage
