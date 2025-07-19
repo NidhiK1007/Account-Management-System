@@ -16,10 +16,15 @@ account_logic.py – Handles core banking operations: deposit, withdraw, and bal
 balance.json – Stores the user's account balance in JSON format.
 
 💡 Features
+
 ✅ User login with PIN authentication (3 attempts allowed before account freeze).
+
 ✅ Deposit money into the account.
+
 ✅ Withdraw money with balance validation.
+
 ✅ Check account balance.
+
 ✅ Data persistence using a JSON file (balance.json) to store balance.
 
 ⚙️ How to Run
