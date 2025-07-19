@@ -4,6 +4,7 @@
 This is a simple Python console-based banking system project that simulates basic banking operations with PIN validation and JSON-based balance storage.
 
 📂 Files Overview
+
 main.py – Entry point of the program; handles user interaction flow.
 
 validation.py – Contains the login function for PIN validation.
