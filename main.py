@@ -6,10 +6,10 @@ def main():
     login()
     choice=input("Enter the choice (1/2/3):")
     if choice=='1':
-        withdraw()
+        deposit()
         break
     elif choice=='2':
-        deposit()
+        withdraw()
         break
     elif choice=='3':
         check_balance()
@@ -17,5 +17,5 @@ def main():
     else:
         print("Wrong option selected. Try again")
         
-if __name__=='__main__':
-  main():
+if __name__=="__main__":
+  main()
