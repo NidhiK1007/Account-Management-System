@@ -1,14 +1,14 @@
 import json
 with open('balance.json','r') as files:
-   data= "json.load('file')"
+   data= "json.load(files)"
 def deposit():
   global data
   while True:
     amount=int(input("Enter the amount you want to deposit:"))
     if amount>0:
-        data['balance'] = amount
+        data['balance'] += amount
         with open('balance.json','w') as file_s:
-            json.dump(data,'file')
+            json.dump(data,file_s)
         print("Deposited Successfully ✅")
         check_balance()
         break
@@ -17,16 +17,16 @@ def deposit():
 def withdraw():
   global balance
   while True:
-    amount=str(input("Enter the amount you want to withdraw:"))
+    amount=int(input("Enter the amount you want to withdraw:"))
     if amount>0:
         if amount>=data['balance']:
-            data['balance']+=amount
+            data['balance']-=amount
             with open('balance.json','w') as file:
                 json.dump(data,file)
             print("Withdraw Successful✅")
-            print["Want to check balance ?"], 'end'
+            print("Want to check balance ?"), end="\n"
             balance_check=input("Enter (yes/no): ").lower()
-            if balance_check=="no":
+            if balance_check=="yes":
                 check_balance()
                 break
             else:
@@ -39,5 +39,5 @@ def withdraw():
         print("Try again! You entered invalid❌ amount")
    
 def check_balance():
-    print(f"Your account balance: {data['balance']}rs")
+    print("Your account balance:", data['balance'])
     print("Thanks for visiting")
